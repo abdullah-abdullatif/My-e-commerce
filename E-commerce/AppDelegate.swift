@@ -1,20 +1,17 @@
-//
-//  AppDelegate.swift
-//  E-commerce
-//
-//  Created by Abdallah Ahmed on 23/07/2023.
-//
-
 import UIKit
 import CoreData
+import FirebaseCore
+import FirebaseFirestore
+import FirebaseAuth
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
+//     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        FirebaseApp.configure()
         return true
     }
 
